@@ -1,0 +1,27 @@
+GET http://localhost:3001/api/persons
+
+###
+
+GET http://localhost:3001/info
+
+###
+
+GET http://localhost:3001/api/persons/malformattedid
+
+###
+
+GET http://localhost:3001/uknownendpoint
+
+###
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "rtsdfyyr",
+    "number": 1234567
+}
+
+###
+
+DELETE http://localhost:3001/api/persons/5f5696fe74422c3df8cc6aed
